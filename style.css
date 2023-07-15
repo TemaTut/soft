@@ -1,0 +1,257 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    width: 1440px;
+    height: 10000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    overflow: visible;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 31px 150px;
+}
+
+.btn {
+    display: flex;
+    gap: 52px;
+}
+
+.btn__buy {
+    padding: 6px 24px;
+    color: #fff;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    border-radius: 32px;
+    border: 0 solid #620f5f;
+    background: #620f5f;
+}
+
+.btn__menu {
+    color: #47093e;
+    background: #ff00f700;
+}
+
+.content {
+    display: flex;
+    gap: 70px;
+}
+
+.content__text {
+    width: 360px;
+    margin: 0;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 159px;
+}
+
+h2 {
+    word-wrap: break-word;
+    width: 450px;
+    margin: 0;
+    padding: 0 0 0 150px;
+    text-align: start;
+    color: #000;
+    font-family: Merriweather;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: lowercase;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 0 0 150px;
+}
+
+.options__item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: #590d56;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.slider {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 110px;
+}
+
+.slider__img {
+    position: relative;
+    display: flex;
+}
+
+.slider__img img {
+    position: absolute;
+    transition: all 0.2s ease-in-out;
+}
+
+.focus1-slide1 {
+    z-index: 1;
+}
+
+.focus1-slide2 {
+    z-index: 2;
+    top: 73px;
+    left: 180px;
+}
+
+.focus1-slide3 {
+    z-index: 1;
+    top: -12px;
+    left: 500px;
+}
+
+.focus2-slide1 {
+    z-index: 2;
+    top: 73px;
+    left: 180px;
+}
+
+.focus2-slide2 {
+    z-index: 1;
+    top: -12px;
+    left: 380px;
+}
+
+.focus2-slide3 {
+    z-index: 1;
+    top: 0;
+    left: 90px;
+}
+
+.focus3-slide1 {
+    z-index: 1;
+    top: 0px;
+    left: 400px;
+}
+
+.focus3-slide2 {
+    z-index: 1;
+}
+
+.focus3-slide3 {
+    z-index: 2;
+    top: 73px;
+    left: 289px;
+}
+
+.slider__arrows {
+    position: absolute;
+    display: flex;
+    gap: 30px;
+    top: 380px;
+    left: 410px;
+    z-index: 2;
+}
+
+.slider__btn {
+    position: absolute;
+    top: 480px;
+    left: 365px;
+    padding: 20.71px 80px 25.29px 79px;
+    background-color: transparent;
+    border-radius: 33.5px;
+    border: 1px solid #fff;
+    font: inherit;
+    cursor: pointer;
+    white-space: nowrap;
+    color: #ffffff;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.discleimer {
+    position: relative;
+    margin: 0 auto;
+    padding: 29.57px 57px 14px 0;
+    color: #242424;
+    font-family: Roboto;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 40px;
+    letter-spacing: -1.36px;
+    text-transform: uppercase;
+    opacity: 0.699999988079071;
+    border-radius: 18px;
+    background: #f9f9f9;
+}
+
+.discleimer__cross {
+    position: absolute;
+    top: 30px;
+    right: 0;
+}
+
+/* Анимация svg */
+
+.animated-element {
+    position: absolute;
+    z-index: -1;
+    flex-shrink: 0;
+    max-width: 1440px;
+}
+
+svg {
+    height: 150%;
+}
+
+#wavePath {
+    animation: waveAnimation 3s linear infinite;
+    transform-origin: center;
+}
+
+@keyframes waveAnimation {
+    0% {
+        transform: scaleX(1) scaleY(1);
+    }
+    50% {
+        transform: scaleX(1.6) scaleY(1.1);
+    }
+    100% {
+        transform: scaleX(1) scaleY(1);
+    }
+}
